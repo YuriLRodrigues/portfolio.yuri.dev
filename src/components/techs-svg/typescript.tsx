@@ -1,18 +1,8 @@
 export const TypescriptSvg = () => {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      aria-label="TypeScript"
-      role="img"
-      viewBox="0 0 512 512"
-      fill="#000000"
-    >
+    <svg xmlns="http://www.w3.org/2000/svg" aria-label="TypeScript" role="img" viewBox="0 0 512 512" fill="#000000">
       <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
-      <g
-        id="SVGRepo_tracerCarrier"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      ></g>
+      <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
       <g id="SVGRepo_iconCarrier">
         <rect width="512" height="512" rx="15%" fill="#3178c6"></rect>
         <path
@@ -21,5 +11,5 @@ export const TypescriptSvg = () => {
         ></path>
       </g>
     </svg>
-  );
-};
+  )
+}
