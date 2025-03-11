@@ -1,1 +1,1 @@
-export { TimelineTabs } from "./timeline";
+export { TimelineTabs } from './timeline-tabs'

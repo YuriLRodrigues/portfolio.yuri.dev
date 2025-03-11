@@ -2,12 +2,12 @@ import { ReactNode } from 'react'
 
 import { cn } from '@/lib/utils'
 
-interface ProjectBadgeProps {
+interface TimelineBadgeProps {
   children: ReactNode
   className?: string
 }
 
-export function ProjectBadge({ children, className }: ProjectBadgeProps) {
+export function TimelineBadge({ children, className }: TimelineBadgeProps) {
   return (
     <div
       className={cn(
