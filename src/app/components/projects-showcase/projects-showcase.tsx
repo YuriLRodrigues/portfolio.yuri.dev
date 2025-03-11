@@ -1,7 +1,6 @@
 'use client'
 
 import Image from 'next/image'
-import Link from 'next/link'
 import { useState, useCallback, useEffect } from 'react'
 
 import { Icon } from '@/components/icon'
@@ -82,11 +81,11 @@ const ProjectCard = ({ project }: { project: Project }) => {
           <h3 className="text-xl font-bold">{project.title}</h3>
           <div className="flex flex-col pr-2">
             <p className="text-muted-foreground mt-2 line-clamp-3">{project.description}</p>
-            <Button effect="underline" variant="link" className="ml-auto p-0 text-xs">
+            {/* <Button effect="underline" variant="link" className="ml-auto p-0 text-xs">
               <Link className="w-full" href={`/projects/${project.id}`}>
                 Mais detalhes
               </Link>
-            </Button>
+            </Button> */}
           </div>
 
           <ScrollArea className="max-h-12 w-full pb-3">
