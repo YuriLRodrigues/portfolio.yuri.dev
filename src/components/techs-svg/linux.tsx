@@ -2,11 +2,7 @@ export const LinuxSvg = () => {
   return (
     <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none">
       <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
-      <g
-        id="SVGRepo_tracerCarrier"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      ></g>
+      <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
       <g id="SVGRepo_iconCarrier">
         <path
           fill="#202020"
@@ -42,5 +38,5 @@ export const LinuxSvg = () => {
         ></path>
       </g>
     </svg>
-  );
-};
+  )
+}

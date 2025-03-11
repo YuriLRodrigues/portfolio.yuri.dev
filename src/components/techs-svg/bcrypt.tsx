@@ -1,11 +1,6 @@
 export const BcryptSvg = () => {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="200"
-      height="200"
-      viewBox="0 0 16 16"
-    >
+    <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 16 16">
       <path
         fill="currentColor"
         fillRule="evenodd"
@@ -13,5 +8,5 @@ export const BcryptSvg = () => {
         clipRule="evenodd"
       />
     </svg>
-  );
-};
+  )
+}

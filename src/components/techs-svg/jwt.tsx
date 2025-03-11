@@ -1,11 +1,6 @@
 export const JwtSvg = () => {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="200"
-      height="200"
-      viewBox="0 0 256 257"
-    >
+    <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 256 257">
       <path
         fill="#FFF"
         d="M147.386 69.071L147.129 0h-38.515l.257 69.071l19.257 26.448zm-38.515 118.371v69.328h38.515v-69.328l-19.258-26.447z"
@@ -27,5 +22,5 @@ export const JwtSvg = () => {
         d="m77.545 164.847l-40.57 55.975l31.069 22.596l40.827-55.976v-32.61zm100.91-73.18l40.57-55.976l-31.069-22.596l-40.57 55.976v32.61z"
       />
     </svg>
-  );
-};
+  )
+}

@@ -1,31 +1,23 @@
-import { memo } from "react";
+import { memo } from 'react'
 
-import { cn } from "@/lib/utils";
-import { icons } from "lucide-react";
+import { cn } from '@/lib/utils'
+import { icons } from 'lucide-react'
 
 export type IconProps = {
-  name: keyof typeof icons;
-  className?: string;
-  strokeWidth?: number;
-  fill?: string;
-};
+  name: keyof typeof icons
+  className?: string
+  strokeWidth?: number
+  fill?: string
+}
 
-export const Icon = memo(
-  ({ name, className, strokeWidth, fill }: IconProps) => {
-    const IconComponent = icons[name];
+export const Icon = memo(({ name, className, strokeWidth, fill }: IconProps) => {
+  const IconComponent = icons[name]
 
-    if (!IconComponent) {
-      return null;
-    }
+  if (!IconComponent) {
+    return null
+  }
 
-    return (
-      <IconComponent
-        className={cn("h-4 w-4", className)}
-        strokeWidth={strokeWidth || 2.5}
-        fill={fill || "none"}
-      />
-    );
-  },
-);
+  return <IconComponent className={cn('h-4 w-4', className)} strokeWidth={strokeWidth || 2.5} fill={fill || 'none'} />
+})
 
-Icon.displayName = "Icon";
+Icon.displayName = 'Icon'
