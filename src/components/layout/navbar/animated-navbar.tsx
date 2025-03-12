@@ -1,23 +1,16 @@
 'use client'
+
 import { useEffect, useRef, useState } from 'react'
 
-import type { icons } from 'lucide-react'
 import { twMerge } from 'tailwind-merge'
 
-export type Tabs = {
-  title: string
-  href: string
-  icon: keyof typeof icons
-  sectionId?: string // ID of the corresponding section element
-}
+import { tabs } from './tabs'
 
 export type AnimatedNavbarProps = {
-  tabs: Tabs[]
-  // Option to disable URL updates if needed
   updateUrl?: boolean
 }
 
-export const AnimatedNavbar = ({ tabs, updateUrl = true }: AnimatedNavbarProps) => {
+export const AnimatedNavbar = ({ updateUrl = true }: AnimatedNavbarProps) => {
   const fired = useRef(false)
   const defaultSelectedTabIndex = 0
   const [currentLink, setCurrentLink] = useState<{
@@ -143,9 +136,7 @@ export const AnimatedNavbar = ({ tabs, updateUrl = true }: AnimatedNavbarProps) 
   }
 
   return (
-    <div
-      className={'relative hidden w-fit items-center justify-center gap-5 rounded-full p-2 backdrop-blur-2xl md:flex'}
-    >
+    <div className="relative hidden w-fit items-center justify-center gap-5 rounded-full p-2 backdrop-blur-2xl md:flex">
       {tabs.map((link, i) => (
         <button
           key={i}

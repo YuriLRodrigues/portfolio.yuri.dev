@@ -1,38 +1,12 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { Suspense } from 'react'
 
-import { AnimatedNavbar, Tabs } from '@/components/layout/navbar/animated-navbar'
+import { AnimatedNavbar } from '@/components/layout/navbar/animated-navbar'
 
 import { ThemeSwitch } from '../theme-switch'
+import { AnimatedNavbarSkeleton } from './navbar/animated-navbar-skeleton'
 import { MobileNavbar } from './navbar/mobile-navbar'
-
-const tabs: Tabs[] = [
-  {
-    title: 'Início',
-    href: '#home',
-    icon: 'House',
-  },
-  {
-    title: 'Linha do tempo',
-    href: '#timeline',
-    icon: 'Timer',
-  },
-  {
-    title: 'Tecnologias',
-    href: '#techs',
-    icon: 'Crosshair',
-  },
-  {
-    title: 'Diferenciais',
-    href: '#feature',
-    icon: 'Shapes',
-  },
-  {
-    title: 'Projetos',
-    href: '#projects',
-    icon: 'Blocks',
-  },
-]
 
 export const Header = () => {
   return (
@@ -46,7 +20,9 @@ export const Header = () => {
           height={100}
         />
       </Link>
-      <AnimatedNavbar tabs={tabs} />
+      <Suspense fallback={<AnimatedNavbarSkeleton />}>
+        <AnimatedNavbar />
+      </Suspense>
       <ThemeSwitch className="hidden md:flex" />
       <MobileNavbar />
     </header>

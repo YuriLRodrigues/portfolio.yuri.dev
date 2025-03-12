@@ -47,7 +47,7 @@ export function GradientText({
   return (
     <span
       ref={textRef}
-      className={`text-4xl font-bold text-wrap sm:text-6xl ${className}`}
+      className={`text-4xl font-bold text-wrap break-words sm:text-6xl ${className}`}
       style={{
         background: `linear-gradient(90deg, ${startColor}, ${endColor}, ${startColor})`,
         backgroundSize: '200% auto',

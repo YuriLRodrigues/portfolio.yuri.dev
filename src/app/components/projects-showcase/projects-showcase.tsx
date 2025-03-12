@@ -45,7 +45,7 @@ const ProjectImageCarousel = ({ images }: { images: string[] }) => {
                 height={300}
                 src={src || '/placeholder.svg'}
                 alt={`Project image ${index + 1}`}
-                className="h-[250px] w-full object-cover object-center md:h-[300px]"
+                className="aspect-square h-[250px] max-h-full w-full max-w-full object-cover object-center md:h-[300px]"
               />
             </div>
           ))}

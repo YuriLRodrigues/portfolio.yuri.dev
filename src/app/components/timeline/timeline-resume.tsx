@@ -1,5 +1,3 @@
-'use client'
-
 import Image from 'next/image'
 
 import { Icon } from '@/components/icon'
@@ -13,7 +11,13 @@ export const TimelineResume = () => {
         <div className="relative mx-auto h-64 max-h-64 min-h-64 w-64 max-w-64 min-w-64 md:h-80 md:max-h-80 md:min-h-80 md:w-80 md:max-w-80 md:min-w-80">
           <div className="absolute inset-0 animate-pulse rounded-full bg-blue-500 opacity-20 blur-md" />
           <div className="relative h-full w-full overflow-hidden rounded-full">
-            <Image src="/perfil.png" alt="Profile Picture" fill className="object-cover object-center" priority />
+            <Image
+              src="/perfil.png"
+              alt="profile-pic"
+              width={320}
+              height={320}
+              className="aspect-sqaure max-h-content max-w-content object-cover object-center"
+            />
           </div>
         </div>
 
@@ -45,19 +49,19 @@ export const TimelineResume = () => {
               conhecimentos com a equipe!
             </p>
 
-            <div className="flex flex-wrap items-center gap-3">
-              <a href="www.linkedin.com/in/yuri-leite-rodrigues" target="_blank" rel="noreferrer">
-                <Button variant="default" effect="shine" className="flex items-center rounded-full">
+            <div className="!mt-4 flex flex-wrap items-center gap-3">
+              <a href="https://www.linkedin.com/in/yuri-leite-rodrigues" target="_blank" rel="noreferrer">
+                <Button variant="default" effect="shine" className="flex cursor-pointer items-center rounded-full">
                   <Icon name="Linkedin" /> Linkedin
                 </Button>
               </a>
               <a href="mailto:rodriguesyuri769@gmail.com" target="_blank" rel="noreferrer">
-                <Button variant="default" effect="shine" className="flex items-center rounded-full">
+                <Button variant="default" effect="shine" className="flex cursor-pointer items-center rounded-full">
                   <Icon name="Mail" /> E-mail
                 </Button>
               </a>
               <a href="https://wa.me/31987336364" target="_blank" rel="noreferrer">
-                <Button variant="default" effect="shine" className="flex items-center rounded-full">
+                <Button variant="default" effect="shine" className="flex cursor-pointer items-center rounded-full">
                   <Icon name="Phone" /> WhatsApp
                 </Button>
               </a>

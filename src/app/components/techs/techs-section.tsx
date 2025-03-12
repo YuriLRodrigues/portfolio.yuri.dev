@@ -1,8 +1,8 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { Title } from '@/components/ui/title'
 
-import { TechCard } from './tech-card'
 import { techs } from './techs'
+import { TechsGrid } from './techs-grid'
 
 export const TechsSection = () => {
   return (
@@ -16,38 +16,16 @@ export const TechsSection = () => {
           <TabsTrigger value="tools">Ferramentas</TabsTrigger>
         </TabsList>
         <TabsContent value="all">
-          <section className="flex w-full flex-wrap items-center justify-center gap-3">
-            {techs.map((tech, index) => (
-              <TechCard index={index} icon={tech.icon} name={tech.name} type={tech.type} key={tech.name} />
-            ))}
-          </section>
+          <TechsGrid techs={techs} />
         </TabsContent>
         <TabsContent value="front-end">
-          <section className="flex w-full flex-wrap items-center justify-center gap-3">
-            {techs
-              .filter((tech) => tech.type === 'front-end' || tech.type === 'fullstack')
-              .map((tech, index) => (
-                <TechCard index={index} icon={tech.icon} name={tech.name} type={tech.type} key={tech.name} />
-              ))}
-          </section>
+          <TechsGrid techs={techs} type="front-end" />
         </TabsContent>
         <TabsContent value="back-end">
-          <section className="flex w-full flex-wrap items-center justify-center gap-3">
-            {techs
-              .filter((tech) => tech.type === 'back-end' || tech.type === 'fullstack')
-              .map((tech, index) => (
-                <TechCard index={index} icon={tech.icon} name={tech.name} type={tech.type} key={tech.name} />
-              ))}
-          </section>
+          <TechsGrid techs={techs} type="back-end" />
         </TabsContent>
         <TabsContent value="tools">
-          <section className="flex w-full flex-wrap items-center justify-center gap-3">
-            {techs
-              .filter((tech) => tech.type === 'tools')
-              .map((tech, index) => (
-                <TechCard index={index} icon={tech.icon} name={tech.name} type={tech.type} key={tech.name} />
-              ))}
-          </section>
+          <TechsGrid techs={techs} type="tools" />
         </TabsContent>
       </Tabs>
     </section>

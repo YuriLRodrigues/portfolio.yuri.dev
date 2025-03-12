@@ -1,5 +1,5 @@
 import { FeatureCarousel } from './components/features'
-import Hero from './components/hero/hero'
+import { Hero } from './components/hero'
 import Marquee from './components/marquee'
 import ProjectsShowcase from './components/projects-showcase/projects-showcase'
 import { TechsSection } from './components/techs/techs-section'
