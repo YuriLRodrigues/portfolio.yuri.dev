@@ -10,7 +10,7 @@ export const Presentation = () => {
   return (
     <div className="mx-auto space-y-3 xl:max-w-6xl">
       <motion.h1
-        className="text-foreground text-3xl font-bold tracking-tight break-words sm:text-6xl"
+        className="text-foreground text-2xl font-bold tracking-tight break-words sm:text-3xl sm:text-6xl"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
@@ -20,7 +20,7 @@ export const Presentation = () => {
       </motion.h1>
 
       <motion.p
-        className="text-muted-foreground mt-6 max-w-4xl text-lg leading-8"
+        className="text-muted-foreground mt-6 max-w-4xl leading-8 sm:text-lg"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.2 }}
