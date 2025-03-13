@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📌 Meu Portfólio
 
-## Getting Started
+## 🖥️ Sobre o Projeto
+Este é o meu **portfólio pessoal**, desenvolvido para exibir minha trajetória profissional e acadêmica, além dos projetos mais recentes que venho desenvolvendo. Ele foi pensado para ser **totalmente responsivo**, garantindo uma navegação fluida tanto em desktops quanto em dispositivos móveis.
 
-First, run the development server:
+O principal objetivo desse projeto foi consolidar e aplicar meus conhecimentos adquiridos em tecnologias modernas, além de otimizar a experiência do usuário com um design dinâmico e intuitivo.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Tecnologias Utilizadas
+Para desenvolver este portfólio, utilizei as seguintes tecnologias e ferramentas:
+
+- **[Next.js](https://nextjs.org/)** → Framework React para renderização no servidor (SSR) e geração de páginas estáticas (SSG), proporcionando alto desempenho e otimização para SEO.
+- **[Framer Motion](https://www.framer.com/motion/)** → Biblioteca poderosa para criar animações suaves e interativas.
+- **[TypeScript](https://www.typescriptlang.org/)** → Superset do JavaScript que adiciona tipagem estática, tornando o código mais seguro e escalável.
+- **[Tailwind CSS](https://tailwindcss.com/)** → Framework de estilização baseado em classes utilitárias, garantindo maior produtividade e modularidade.
+- **[NextThemes](https://github.com/pacocoursey/next-themes)** → Gerenciamento de temas claro/escuro de forma dinâmica e intuitiva.
+- **[Vercel](https://vercel.com/)** → Plataforma utilizada para o deploy do projeto, garantindo alta performance e facilidade na hospedagem.
+
+## 🔥 Recursos e Funcionalidades
+✅ **Timeline profissional e acadêmica** → Exibição organizada das minhas experiências e formação.
+✅ **Demonstração de projetos** → Lista dos projetos mais relevantes que desenvolvi, com links diretos.
+✅ **Tema Claro/Escuro** → Alterne entre os temas para melhor conforto visual.
+✅ **Animações dinâmicas** → Suavidade nas transições e interações.
+✅ **Responsividade completa** → Adaptado para telas de qualquer tamanho.
+✅ **SEO otimizado** → Melhor posicionamento nos motores de busca.
+
+## 📸 Screenshots
+### 🌞 Tema Claro
+<img src="./public/screenshots/light-mode.png" alt="Light Mode" width="600" />
+
+### 🌙 Tema Escuro
+<img src="./public/screenshots/dark-mode.png" alt="Dark Mode" width="600" />
+
+## 📦 Como Rodar o Projeto Localmente
+Caso queira rodar o projeto na sua máquina, siga os passos abaixo:
+
+### 1️⃣ Clone o repositório
+```sh
+ git clone https://github.com/YuriLRodrigues/portfolio.yuri.dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2️⃣ Instale as dependências
+```sh
+ npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 4️⃣ Rode o servidor de desenvolvimento
+```sh
+ npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+O projeto estará disponível em `http://localhost:3000` 🚀
 
-## Learn More
+## 🌍 Deploy
+O projeto está hospedado na **Vercel** e pode ser acessado pelo link abaixo:
 
-To learn more about Next.js, take a look at the following resources:
+🔗 **[Acesse o Portfólio](https://yuridev.vercel.app/)**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🤝 Contribuição
+Se tiver alguma sugestão ou feedback, fique à vontade para abrir uma **issue** ou me chamar no [LinkedIn](https://www.linkedin.com/in/yuri-leite-rodrigues/). Toda ajuda é bem-vinda! 🚀
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Feito com 💙 por **[Yuri Leite Rodrigues](https://github.com/YuriLRodrigues/)**
