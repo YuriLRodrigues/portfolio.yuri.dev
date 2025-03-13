@@ -1,8 +1,11 @@
+import React from 'react'
+
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { Title } from '@/components/ui/title'
 
 import { techs } from './techs'
-import { TechsGrid } from './techs-grid'
+
+const TechsGridLazy = React.lazy(() => import('./techs-grid'))
 
 export const TechsSection = () => {
   return (
@@ -16,16 +19,16 @@ export const TechsSection = () => {
           <TabsTrigger value="tools">Ferramentas</TabsTrigger>
         </TabsList>
         <TabsContent value="all">
-          <TechsGrid techs={techs} />
+          <TechsGridLazy techs={techs} />
         </TabsContent>
         <TabsContent value="front-end">
-          <TechsGrid techs={techs} type="front-end" />
+          <TechsGridLazy techs={techs} type="front-end" />
         </TabsContent>
         <TabsContent value="back-end">
-          <TechsGrid techs={techs} type="back-end" />
+          <TechsGridLazy techs={techs} type="back-end" />
         </TabsContent>
         <TabsContent value="tools">
-          <TechsGrid techs={techs} type="tools" />
+          <TechsGridLazy techs={techs} type="tools" />
         </TabsContent>
       </Tabs>
     </section>

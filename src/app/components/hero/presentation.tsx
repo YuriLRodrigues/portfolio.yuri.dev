@@ -20,7 +20,7 @@ export const Presentation = () => {
       </motion.h1>
 
       <motion.p
-        className="text-muted-foreground mt-6 max-w-4xl leading-8 sm:text-lg"
+        className="text-muted-foreground max-w-4xl leading-8 sm:text-lg"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.2 }}

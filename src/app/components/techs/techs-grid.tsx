@@ -19,7 +19,7 @@ const filterTechs = cache((techs: TechsProps[], type?: string) => {
   })
 })
 
-export function TechsGrid({ techs, type }: TechsGridProps) {
+export default function TechsGrid({ techs, type }: TechsGridProps) {
   const filteredTechs = use(Promise.resolve(filterTechs(techs, type)))
 
   return (
